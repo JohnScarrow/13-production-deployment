@@ -14,7 +14,7 @@ var app = app || {};
     $.ajax({
       url: `user/repos`,
       type: 'GET',
-      headers: {'Authorization': `token ${GITHUB_TOKEN}`}
+      // headers: {'Authorization': `token ${githubToken}`}
     })
     .then(data => repos.all = data, err => console.error(err)) // es6 syntax arrow functions
     .then(callback);
